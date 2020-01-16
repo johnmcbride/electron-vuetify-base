@@ -1,0 +1,38 @@
+{
+    "name": "Electron-vuetify-base",
+    "electronWebpack": {
+        "whiteListedModules": [
+            "vue",
+            "vuetify"
+        ],
+        "title": "Electron Vuetify base project",
+        "main": {
+            "sourceDirectory": "src/main"
+        },
+        "renderer": {
+            "sourceDirectory": "src/renderer",
+            "webpackConfig": "./webpack/vuetify.webpack.js"
+        }
+    },
+    "dependencies": {
+        "electron": "^7.1.7"
+    },
+    "devDependencies": {
+        "css-loader": "^3.4.1",
+        "deepmerge": "^4.2.2",
+        "electron-webpack": "^2.7.4",
+        "electron-webpack-vue": "^2.3.0",
+        "fibers": "^4.0.2",
+        "sass": "^1.24.4",
+        "sass-loader": "7.3.1",
+        "vue": "^2.6.11",
+        "vuetify": "^2.2.3",
+        "vuetify-loader": "^1.4.3",
+        "webpack": "^4.41.5",
+        "webpack-build-notifier": "^2.0.0"
+    },
+    "scripts": {
+        "dev": "electron-webpack dev",
+        "compile": "electron-webpack"
+    }
+}
