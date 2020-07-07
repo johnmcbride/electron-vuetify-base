@@ -15,7 +15,7 @@
         }
     },
     "dependencies": {
-        "electron": "^7.1.7"
+        "electron": "^7.2.4"
     },
     "devDependencies": {
         "css-loader": "^3.4.1",
